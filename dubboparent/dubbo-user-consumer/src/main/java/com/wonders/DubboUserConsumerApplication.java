@@ -1,4 +1,4 @@
-package com.wonders.dubbouserconsumer;
+package com.wonders;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

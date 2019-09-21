@@ -1,4 +1,4 @@
-package com.wonders.dubbopersistant;
+package com.wonders;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

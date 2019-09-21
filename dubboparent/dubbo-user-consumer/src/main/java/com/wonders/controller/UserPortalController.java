@@ -63,7 +63,8 @@ public class UserPortalController {
 
     @RequestMapping("/")
     public String index(){
-        return "/index";
+
+        return "index";
     }
 
 }
