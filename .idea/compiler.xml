@@ -8,18 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dubbocommons" />
         <module name="dubbo-persistant" />
-        <module name="dubbomiddleinterface" />
         <module name="dubboentity" />
         <module name="dubbo-user-consumer" />
+        <module name="dubbomiddleinterface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="dubbo-persistant" target="1.8" />
       <module name="dubbo-user-consumer" target="1.8" />
-      <module name="dubbocommons" target="8" />
-      <module name="dubboentity" target="8" />
-      <module name="dubbomiddleinterface" target="8" />
-      <module name="dubboparent" target="8" />
+      <module name="dubbocommons" target="1.5" />
+      <module name="dubboentity" target="1.5" />
+      <module name="dubbomiddleinterface" target="1.5" />
+      <module name="dubboparent" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
