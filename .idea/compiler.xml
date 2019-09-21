@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbocommons" />
+        <module name="dubbo-persistant" />
+        <module name="dubbomiddleinterface" />
+        <module name="dubboentity" />
+        <module name="dubbo-user-consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="dubbo-persistant" target="1.8" />
+      <module name="dubbo-user-consumer" target="1.8" />
+      <module name="dubbocommons" target="8" />
+      <module name="dubboentity" target="8" />
+      <module name="dubbomiddleinterface" target="8" />
+      <module name="dubboparent" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-persistant" options="-parameters" />
+      <module name="dubbo-user-consumer" options="-parameters" />
+    </option>
+  </component>
+</project>

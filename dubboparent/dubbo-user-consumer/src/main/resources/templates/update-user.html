@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<div style="padding:10px 10px 10px 10px">
+	<form id="modifyUserForm" method="post" action="/user/modifyUser">
+		<input type="hidden" name="id" />
+		<table cellpadding="3">
+			<tr>
+				<td style="padding-right: 5px; text-align: right">
+					姓名：
+				</td>
+				<td style="padding-left: 5px; text-align: left">
+					<input type="text" name="name" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-right: 5px; text-align: right">
+					登录名：
+				</td>
+				<td style="padding-left: 5px; text-align: left">
+					<input type="text" name="username" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-right: 5px; text-align: right">
+					登录密码：
+				</td>
+				<td style="padding-left: 5px; text-align: left">
+					<input type="text" name="password" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-right: 5px; text-align: right">
+					年龄：
+				</td>
+				<td style="padding-left: 5px; text-align: left">
+					<input type="text" name="age" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-right: 5px; text-align: right" colspan="2">
+					<a class="easyui-linkbutton" href="#" onclick="modifyUser('modifyUserForm');"
+					   data-options="iconCls : 'icon-ok'">提交</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+</html>
+

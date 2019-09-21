@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sxt.mapper.UserMapper">
+
+    <sql id="columns">
+		id,name,username,password,age
+	</sql>
+
+    <insert id="insertUser" parameterType="com.wonders.entity.User">
+        <selectKey keyProperty="id" resultType="String" order="BEFORE">
+            select replace(uuid(),'-','') from dual
+        </selectKey>
+        insert into tb_user(
+        id,name,username,password,age
+        )
+        values(
+        #{id}, #{name}, #{username}, #{password}, #{age}
+        )
+    </insert>
+
+    <update id="updateUser">
+        update tb_user
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="age != 0">
+                age = #{age},
+            </if>
+        </set>
+        where
+        id = #{id}
+    </update>
+
+    <delete id="deleteUserById">
+		delete from tb_user
+		where id = #{id}
+	</delete>
+
+    <delete id="deleteUserByExample">
+        <!-- 参数example非null时进行数据删除，尽量避免全数据删除 -->
+        <if test="example != null">
+            delete from tb_user
+            <where>
+                <if test="example.id != null">
+                    and id = #{example.id}
+                </if>
+                <if test="example.name != null">
+                    and name = #{example.name}
+                </if>
+                <if test="example.username != null">
+                    and username = #{example.username}
+                </if>
+                <if test="example.password != null">
+                    and password = #{example.password}
+                </if>
+                <if test="example.age != 0">
+                    and age = #{example.age}
+                </if>
+            </where>
+        </if>
+    </delete>
+
+    <delete id="deleteUsersById">
+        delete from tb_user
+        where id in
+        <foreach collection="ids" open="(" close=")" separator="," item="id">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="selectUsers" resultType="com.wonders.entity.User">
+        select
+        <include refid="columns" />
+        from tb_user
+    </select>
+
+    <select id="selectUserById" resultType="com.wonders.entity.User">
+        select
+        <include refid="columns" />
+        from tb_user
+        where id = #{id}
+    </select>
+
+</mapper>

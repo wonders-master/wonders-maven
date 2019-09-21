@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubboparent/dubbo-persistant/dubbo-persistant.iml" filepath="$PROJECT_DIR$/dubboparent/dubbo-persistant/dubbo-persistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboparent/dubbo-user-consumer/dubbo-user-consumer.iml" filepath="$PROJECT_DIR$/dubboparent/dubbo-user-consumer/dubbo-user-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboparent/dubbo-commons/dubbocommons.iml" filepath="$PROJECT_DIR$/dubboparent/dubbo-commons/dubbocommons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboparent/dubbo-entity/dubboentity.iml" filepath="$PROJECT_DIR$/dubboparent/dubbo-entity/dubboentity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboparent/dubbo-middle-interface/dubbomiddleinterface.iml" filepath="$PROJECT_DIR$/dubboparent/dubbo-middle-interface/dubbomiddleinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboparent/dubboparent.iml" filepath="$PROJECT_DIR$/dubboparent/dubboparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wonders-maven-rpc.iml" filepath="$PROJECT_DIR$/.idea/wonders-maven-rpc.iml" />
+    </modules>
+  </component>
+</project>
